@@ -4,7 +4,7 @@
 
 使用 Github Issue 搭建博客的手机客户端，目前什么都没做好，开发中...
 
-### 手机端
+### Android端
 
 ![](http://img.valorachen.top/18-7-11/69488601.jpg)
 
