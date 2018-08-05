@@ -6,11 +6,12 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 import static com.valorachen.me_android.MyApplication.REPOS;
 
 public interface IssueService {
 
     @GET("repos/"+ REPOS + "/issues")
-    Call<List<Issue>> get();
+    Call<List<Issue>> get(@Query("milestone") int milestone);
 }

@@ -23,7 +23,7 @@ public class ArticleFragment extends BaseRecyclerViewFragment<Issue,ArticleAdapt
         super.onCreateView();
         setPullRefreshEnable(true);
         setPullLoadEnable(true);
-        new RequestMaker<List<Issue>>(activity, ServiceFactory.getIssueService().get()){
+        new RequestMaker<List<Issue>>(activity, ServiceFactory.getIssueService().get(1)){
             @Override
             protected void onSuccess(List<Issue> issues) {
                 data.addAll(issues);

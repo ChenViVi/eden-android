@@ -27,6 +27,7 @@ public class ArticleAdapter extends BaseAdapter<Issue> {
 
     @Override
     protected void convert(BaseViewHolder holder, Issue item, int position) {
+        holder.setIsRecyclable(false);
         holder.setText(R.id.tvTitle, item.getTitle());
         for (Label label : item.getLabels()){
             CardView cvLabel = (CardView) LayoutInflater.from(activity).inflate(R.layout.item_label, null);
